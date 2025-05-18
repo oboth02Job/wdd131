@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <h1> WDD131 - JOB OBOTH</h1>
-        <nav>
-            <ul>
+        <h1>WDD131: Dynamic Web Fudamentals - Job Oboth</h1>
+        <nav class="nav-menu">
+            <ul class="nav-list">
                 <li><a href="https://www.linkedin.com/in/job-oboth-3aa66a27a/">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/5?lang=eng">Scripture</a></li>
@@ -26,14 +27,18 @@
     <main>
         <section class="card">
             <h2>About Me</h2>
+            <img src="images/profile.webp" alt="This is my picture" width="150">
+            <p>My name is Job Oboth. I'm Ugandan and and 26 years old! <br> I'm currently a student at BYU pathway pursuing my bachelors degree of software development. <br> I'm a middle child with five siblings and my family is my whole heart</p>
         </section>
         <section class="card">
-            <h2>Web Dev Resources</h2>
+            <h2>Uganda</h2>
+            <img src="images/Uganda.webp" alt="Uganda Flag">
+            <p>Uganda is a beautiful country located in East Africa! <br> It is known as the pearl of Africa due to its exceptional natural beauty and diverse wild life, <br> as well as its warms and welcoming people</p>
         </section>
     </main>
     <footer>
-        <p>©Job Oboth❤Uganda❤<span id="currentyear"></span></p>
-        <P><span id="lastModified"></span></P>
+        <p>©Job Oboth❤Uganda❤<span id="currentyear"> All rights reserved.</span></p>
+        <P>Last Modification: <span id="lastModified"></span></P>
     </footer>
     <script src="scripts/getdates.js"></script>
 </body>
