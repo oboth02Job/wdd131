@@ -4,7 +4,7 @@ body {
     font-size: 18px;
     margin: 0;
     padding: 0;
-    background-color: yellowgreen;
+    background-color: #f4f4f4;
 }
 
 h1 {
@@ -13,10 +13,11 @@ h1 {
     text-align: center;
     color: white;
     font-size: 25px;
+    margin: 0;
 }
 
 .nav-menu {
-background-color: black;
+background-color: #000;
 font-size: 22px;
 padding: 5px;
 }
@@ -32,8 +33,11 @@ margin: 0;
 }
 
 .nav-list a {
-    color: white;
+    color: yellowgreen;
     text-decoration: none;
+    position: relative;
+    padding: 0.25 0;
+    transition: color 0.25s ease-out;
 }
 
 main {
@@ -53,10 +57,8 @@ main {
     padding: 1px;
     border-radius: 10px;
     overflow: hidden;
+    padding: 1rem;
     
-    
-    width: 35vw;
-    min-height: 35vh;
    
     }
 
@@ -65,18 +67,21 @@ main {
     }
 
     .card img {
-        
+        max-width: 150px;
+        height: auto;
       
     }
 
 @media (min-width: 700px) {
     main {
          grid-template-columns: repeat(2,1fr);
+
     }
     
 }
 
 footer {
     text-align: center;
-    background-color: #666;
+    background-color: #000;
+    color: yellowgreen;
 }
