@@ -1,0 +1,50 @@
+body {
+    font-family:'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+    color: blue;
+    font-size: 18px;
+}
+
+h1 {
+    color: black;
+   margin: 8px;
+}
+
+nav li {
+    list-style: none;
+    
+}
+
+main h1 {
+    text-align: center;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    
+}
+
+nav li.active {
+    display: block;
+}
+
+#nav-li {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+#nav-li.show {
+    display: flex;
+}
+
+figcaption {
+    text-align: center;
+}
+
