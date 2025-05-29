@@ -1,0 +1,156 @@
+:root {
+
+    --primary-color: ;
+    --secondary-color: ;
+    --text-color: ;
+    --background-color: ;
+}
+
+body {
+    font-family:'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+    color: blue;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: white;
+    position: sticky;
+    text-decoration: none;
+
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+} 
+
+
+header {
+    background-color: blueviolet;
+    color: white;
+
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.image-grid figure {
+    margin: 0;
+
+}
+
+.image-grid img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+nav li {
+    list-style: none;
+    }
+
+main h1 {
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center; /*added*/
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+   .header-top {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+}
+
+/*#nav-menu {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}*/
+
+/*#nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}*/
+
+#nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-menu li {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+/*added*/
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+  
+/*added*/
+
+
+#nav-menu.show {
+    display: flex;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    color:white;
+    padding: 1px;
+    background-color:  blueviolet;
+    text-align: center;
+}
