@@ -132,7 +132,7 @@ const temples = [
 
     card.appendChild(name);
     card.appendChild(location);
-    card.appendChild(dedicated);m
+    card.appendChild(dedicated);
     card.appendChild(area);
     card.appendChild(image);
 
