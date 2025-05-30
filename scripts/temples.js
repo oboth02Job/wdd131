@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (navMenu.classList.contains(show)) {
         hamburger.innerHTML = "&times;"; // X symbol
     } else {
-        hamburger.innerHTML = "&#9776;"; // hamburger symbol
+        hamburger.innerHTML = "&#9776;"; // hamburger symboll
     }
     });
 });
