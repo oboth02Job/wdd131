@@ -1,0 +1,43 @@
+@media screen and (min-width: 900px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: data hero weather;
+        gap: 20px;
+        align-items: start;
+        padding: 10px;
+    }
+
+    .data {
+        grid-area: data;
+        background-color: #ffeb3b;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .hero {
+        grid-area: hero;
+        ;
+    }
+
+    .hero img {
+        grid-area: hero;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        border-radius: auto;
+        border-radius: 10px;
+    }
+
+    .weather {
+        grid-area: weather;
+        background-color: #f44336;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+}

@@ -84,5 +84,59 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+      templeName: "Nairobi City Kenya",
+      location: "Nairobi City, Kenya",
+      dedicated: "2025, May, 18",
+      area: 19870,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60488-main.jpg"
+    },
+    {
+      templeName: "Johannesburg South Africa",
+      location: "Johannesburg City, South Africa",
+      dedicated: "1985, August, 24-25",
+      area:  19184 ,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
+    },
+   {
+    templeName: "Kinshasa Democratic Republic of the Congo",
+      location: "51 Avenue de L'OUA, Quartier Basoko, GB, Commune de Ngaliema, Kinshasa",
+      dedicated: "2019, April, 14",
+      area: 12000 ,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/kinshasa-democratic-republic-of-the-congo-temple/kinshasa-democratic-republic-of-the-congo-temple-3533-main.jpg"
+   },
   ];
+
+
+  //Get a reference to the container element where cards will be displayed
+  const container = document.getElementById('temple-cards-container');
+  //loop through each temple in the array
+  temples.forEach(temple => {
+    const card = document.createElement('div');
+    card.classList.add('temple-card');
+    const name = document.createElement('h2');
+    name.textContent = temple.name;
+    const location = document.createElement('p');
+    location.textContent = `Location: ${temple.location}`;
+    const dedicated = document.createElement('p');
+    dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+    const area = document.createElement('p');
+    area.textContent = `Area: ${temple.area}`;
+    const image = document.createElement('img');
+    image.scr = temple.image;
+    image.alt = temple.name;
+    image.loading = "lazy";
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);m
+    card.appendChild(area);
+    card.appendChild(image);
+
+    container.appendChild(card);
+    
+
+  })
