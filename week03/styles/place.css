@@ -17,29 +17,18 @@ h1 {
      text-align: center;
      background-color: yellow;
      padding: 5px;
-     width: 100vh;
-     height: 400px;
+
 }
 
 .weather {
     background-color: red;
     text-align: center;
     padding: 5px;
-    width: 100vh;
-    height: 300px;
 }
 
-.hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
 
 .hero picture img {
-    height: 100%;
-    width: 100vh;
-    display: block;
+    
 }
 
 .cards {
@@ -50,7 +39,6 @@ footer {
     background-color: #000;
     color: white;
     padding: 5px;
-    width: 100vh;
     
     
 }
