@@ -1,4 +1,7 @@
 
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
+
 
 const temples = [
     {
@@ -174,5 +177,14 @@ displayTemples(temples);
 
     displayTemples(smallTemples);
   })
+
+  const homeFilter = document.getElementById('home-filter');
+
+  homeFilter.addEventListener('click',(event) =>{
+    event.preventDefault();
+
+  })
+
+  displayTemples(temples)
 
 
