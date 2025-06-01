@@ -151,4 +151,28 @@ displayTemples(temples);
     displayTemples(newTemples);
   })
 
+  const largeFilter = document.getElementById('large-filter');
+
+  largeFilter.addEventListener('click',(event) => {
+    event.preventDefault();
+
+    const largeTemples = temples.filter(temple => {
+      return temple.area > 90000;
+    });
+
+    displayTemples(largeTemples);
+  })
+
+  const smallFilter = document.getElementById('small-filter');
+
+  smallFilter.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const smallTemples = temples.filter(temple => {
+      return temple.area < 10000;
+    }) 
+
+    displayTemples(smallTemples);
+  })
+
 
