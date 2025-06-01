@@ -99,9 +99,10 @@ const temples = [
     const area = document.createElement('p');
     area.textContent = `Area: ${temple.area}`;
     const image = document.createElement('img');
-    image.src = temple.image;
+
+    image.src = temple.imageUrl;
     image.alt = temple.name;
-    image.loading = "eager";
+    image.loading = "lazy";
 
     card.appendChild(name);
     card.appendChild(location);
