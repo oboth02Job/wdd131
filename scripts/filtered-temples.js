@@ -87,21 +87,29 @@ const temples = [
   //Get a reference to the container element where cards will be displayed
   const container = document.getElementById('temple-cards-container');
   //loop through each temple in the array
-  temples.forEach(temple => {
-    const card = document.createElement('div');
-    card.classList.add('temple-card');
-    const name = document.createElement('h2');
-    name.textContent = temple.name;
+  function displayTemples(templeArray) {
+    container.innerHTML = "";
+
+    templeArray.forEach(temple => {
+      const card = document.createElement('div');
+      card.classList.add(temple-card)
+
+      const name = document.createElement('h2');
+    name.textContent = temple.templeName;
+
     const location = document.createElement('p');
     location.textContent = `Location: ${temple.location}`;
-    const dedicated = document.createElement('p');
+
+     const dedicated = document.createElement('p');
     dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
     const area = document.createElement('p');
-    area.textContent = `Area: ${temple.area}`;
+    area.textContent = `Area: ${temple.area.toLocaleString()} sq ft`;
+
     const image = document.createElement('img');
 
     image.src = temple.imageUrl;
-    image.alt = temple.name;
+    image.alt = temple.templeName;
     image.loading = "lazy";
 
     card.appendChild(name);
@@ -111,6 +119,36 @@ const temples = [
     card.appendChild(image);
 
     container.appendChild(card);
-    
 
+});
+  }
+
+displayTemples(temples);
+
+     const oldFilter = document.getElementById('old-filter');
+
+  oldFilter.addEventListener('click',(event)=> {
+    event.preventDefault();
+
+    const oldTemples = temples.filter(temple => {
+      const year = parseInt(temple.dedicated.split(',')[0]);
+      return year < 1900;
+    })
+
+    displayTemples(oldTemples);
+  });
+
+  const newFilter = document.getElementById('new-filter');
+
+  newFilter.addEventListener('click',(event) => {
+    event.preventDefault();
+
+    const newTemples = temples.filter(temple => {
+      const year = parseInt(temple.dedicated.split(',')[0]);
+      return year > 2000;
+    })
+
+    displayTemples(newTemples);
   })
+
+
