@@ -169,6 +169,13 @@ figcaption {
     border-radius: 8px;
 }
 
+nav a:hover {
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: overline;
+    transition: all 0.3s ease;
+}
+
 footer {
     color:white;
     padding: 1px;
