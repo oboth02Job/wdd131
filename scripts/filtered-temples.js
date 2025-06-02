@@ -3,7 +3,7 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
 
-const templeArray = [
+const temples = [
     {
       templeName: "Aba Nigeria",
       location: "Aba, Nigeria",
@@ -91,7 +91,7 @@ const templeArray = [
   const container = document.getElementById('temple-cards-container');
   //loop through each temple in the array
 
-  const temples = templeArray;
+  const templeArray = temples;
 
   function displayTemples(templeArray) {
     container.innerHTML = "";
