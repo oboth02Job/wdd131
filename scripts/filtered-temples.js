@@ -3,7 +3,7 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
 
-const temples = [
+const templeArray = [
     {
       templeName: "Aba Nigeria",
       location: "Aba, Nigeria",
@@ -90,6 +90,9 @@ const temples = [
   //Get a reference to the container element where cards will be displayed
   const container = document.getElementById('temple-cards-container');
   //loop through each temple in the array
+
+  const temples = templeArray;
+
   function displayTemples(templeArray) {
     container.innerHTML = "";
 
@@ -182,9 +185,9 @@ displayTemples(temples);
 
   homeFilter.addEventListener('click',(event) => {
     event.preventDefault();
+    displayTemples(temples)
+  });
 
-  })
-
-  displayTemples(temples)
+  
 
 
