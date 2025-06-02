@@ -1,3 +1,4 @@
+
 :root {
 
     --primary-color: ;
@@ -19,7 +20,9 @@ nav ul li a {
     text-decoration: none;
 
 }
-
+ h2 {
+    text-align: center;
+ }
 
 .header-top {
     display: flex;
@@ -74,6 +77,13 @@ main h1 {
     font-size: 20px;
     cursor: pointer;
     
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: overline;
+    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 600px) {
