@@ -95,7 +95,7 @@ const temples = [
 
     templeArray.forEach(temple => {
       const card = document.createElement('div');
-      card.classList.add(temple-card)
+      card.classList.add('temple-card')
 
       const name = document.createElement('h2');
     name.textContent = temple.templeName;
@@ -180,7 +180,7 @@ displayTemples(temples);
 
   const homeFilter = document.getElementById('home-filter');
 
-  homeFilter.addEventListener('click',(event) =>{
+  homeFilter.addEventListener('click',(event) => {
     event.preventDefault();
 
   })
