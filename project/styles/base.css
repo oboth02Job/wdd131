@@ -12,7 +12,93 @@ h1 {
 }  
 
 header {
-    background-color: lightgreen;
+    background-color: black;
     color: yellow;
 }
 
+#nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    margin-left: 80px;
+}
+
+#nav-menu li a {
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.form-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form label {
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #004d40;
+}
+
+.message-box {
+    background-color: #e0ffe0;
+    border: 2px solid #009900;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.text {
+    text-align: center;
+}
+
+.home-link {
+    text-align: center;
+}
+
+.book {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: red;
+}
