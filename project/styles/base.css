@@ -44,9 +44,54 @@ header {
     border-radius: 60px;
 }
 
+.hamburger {
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
 
+/*@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
 
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #nav-menu.show {
+        display: flex;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+}
+}*/
+
+main {
+    margin: 20px;
+}
+
+.responsive h4 {
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+  color: red;
+}
+
+.responsive img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#welcome-message {
+    color: red;
+}
 
 
 .form-section {
