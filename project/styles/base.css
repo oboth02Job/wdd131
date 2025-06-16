@@ -77,9 +77,9 @@ main {
 
 .responsive h4 {
   text-align: center;
-  font-style: oblique;
+  font-family: cursive;
   font-weight: bold;
-  color: red;
+  color: green;
 }
 
 .responsive img {
@@ -96,6 +96,7 @@ main {
 
 #welcome-message {
     color: red;
+    font-family: cursive;
 }
 
 
