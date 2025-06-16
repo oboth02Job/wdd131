@@ -18,7 +18,7 @@ else {
     //if not the first time, show different message
     document.addEventListener("DOMContentLoaded", () => {
         const message = document.getElementById("welcome-message");
-        message.textContent = "Welcome back to  Nile Origin Safaris!"
+        message.textContent = `Welcome back to  Nile Origin Safaris!`
     });
 };
 
